@@ -11,12 +11,12 @@ The initial step involves reading the CSV file named "data.csv". This file likel
 In this step, the values from the "ACC X" column of the CSV file are processed to create spectrograms. Spectrograms are a way to represent the frequency content of a signal over time.
 
 ### Step 3: Data Augmentation
-Data augmentation is applied to the spectrograms to create positive and negative samples. As a starting point, random blurring is employed to simulate various real-world scenarios.
+Data augmentation is applied to the spectrograms to create datset. As a starting point, random blurring is employed to simulate various real-world scenarios.
 
 ## To-Do (Future Steps)
 
 ### Step 4: Using Pre-trained Network for Encoding
-Incorporate a pre-trained network, such as a convolutional neural network (CNN) or a pretrained backbone like ResNet, to perform the encoding of augmented spectrogram data.
+Incorporate a pre-trained network, such VGG-16, ResNet, to perform the encoding of augmented spectrogram data.
 
 ### Step 5: Custom Projection-Head
 Develop a custom projection head architecture that takes encoded features and projects them into a suitable space for applying contrastive loss.
