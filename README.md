@@ -11,16 +11,7 @@ The initial step involves reading the CSV file named "data.csv". This file likel
 In this step, the values from the "ACC X" column of the CSV file are processed to create spectrograms. Spectrograms are a way to represent the frequency content of a signal over time.
 
 ### Step 3: Data Augmentation
-Data augmentation is applied to the spectrograms to enhance the diversity of the training data. As a starting point, random blurring is employed to simulate various real-world scenarios.
-
-### Step 4: Using Pre-trained Network for Encoding
-This step, which will be added later, involves utilizing a pre-trained neural network for encoding the augmented spectrogram data. This encoding extracts meaningful features from the data.
-
-### Step 5: Custom Projection-Head
-Following the encoding step, a custom projection head will be employed. A projection head is used to further transform the encoded features into a space where contrastive loss can be applied effectively.
-
-### Step 6: Contrastive Loss and Network Update
-The contrastive loss is employed to update the network's weights. This loss function encourages similar representations for augmented views of the same data while pushing different data points apart. Through optimization, the network learns meaningful representations.
+Data augmentation is applied to the spectrograms to create positive and negative samples. As a starting point, random blurring is employed to simulate various real-world scenarios.
 
 ## To-Do (Future Steps)
 
